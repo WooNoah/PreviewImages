@@ -1,8 +1,8 @@
 # PreviewImages
 
-####这是一个全屏展示图片的小demo，主要分三种情况来实现：
+###这是一个全屏展示图片的小demo，主要分三种情况来实现：
 
-1. 正常页面中的ImageView
+####1.正常页面中的ImageView
 ```
 ///主要使用了这两个方法
 + (void)showImage:(UIImageView*)avatarImageView
@@ -41,7 +41,7 @@ backgroundView.alpha =0;
 }
 ```
 
-2. Tableview的cell上的图片
+####2.Tableview的cell上的图片
 ```
 ///tableview cell这个，主要使用了UIView的类方法， animateWithxxx
 UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:9999];
@@ -72,7 +72,7 @@ self.bigImgView.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 
 }
 
 ```
-3. CollectioinView的cell上的图片
+####3.CollectioinView的cell上的图片
 ```
 collection使用了一个第三方，冯大师的PhotoBroswer
 /*
