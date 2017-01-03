@@ -74,24 +74,11 @@
     CGPoint location = [sender locationInView:self.tabView];
     NSIndexPath *indexPath  = [self.tabView indexPathForRowAtPoint:location];
     UITableViewCell *cell = (UITableViewCell *)[self.tabView  cellForRowAtIndexPath:indexPath];
-    //     NSLog(@"%f",self.tableView.contentOffset.y);
-    //
-    //
-    //    NSLog(@"%f----%f-----%f-----%f",cell.frame.origin.x,cell.frame.origin.y-self.tableView.contentOffset.y,cell.frame.size.height,cell.frame.size.width);
-    //
-    //
+
     UIImageView *imageView = (UIImageView *)[cell.contentView viewWithTag:9999];
     
     //小图的frame
     self.oldFrame = CGRectMake(cell.frame.origin.x+imageView.frame.origin.x, cell.frame.origin.y+imageView.frame.origin.y-self.tabView.contentOffset.y, imageView.frame.size.width, imageView.frame.size.height); //得到cell上的图片位置
-    
-//    UIImageView *fullImageView=[[UIImageView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height)];
-//    fullImageView.backgroundColor=[UIColor blackColor];
-//    fullImageView.userInteractionEnabled=YES;
-////    [fullImageView addGestureRecognizer:[[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(actionTap2:)]];
-//    fullImageView.contentMode=UIViewContentModeScaleAspectFit;
-    
-    
     
     if (![self.bigImgView superview]) {
         

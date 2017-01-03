@@ -72,9 +72,10 @@
  *  本地图片展示
  */
 -(void)localImageShow:(NSUInteger)index{
+    //这里没有实现，同志们可以自己参考实现
     
 //    __weak typeof(self) weakSelf=self;
-//    
+    
 //    [PhotoBroswerVC show:self type:PhotoBroswerVCTypePush index:index photoModelBlock:^NSArray *{
 //        
 //        NSArray *localImages = weakSelf.images;
